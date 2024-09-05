@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Age</title>
+</head>
+<body>
+    <script>
+       
+       // Task: Write a script that compares two numbers and displays the result.
+
+        function calculateAge() {
+          
+            var birthYear = parseInt(prompt("Enter your birth year:"));
+            
+            var currentYear = new Date().getFullYear();
+            
+            var age = currentYear - birthYear;
+            
+            alert("You are " + age + " years old.");
+        }
+        
+        calculateAge();
+    </script>
+</body>
+</html>

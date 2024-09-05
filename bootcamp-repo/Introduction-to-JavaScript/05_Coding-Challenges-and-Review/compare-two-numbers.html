@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Two Numbers</title>
+</head>
+<body>
+    <script>
+
+        // Task: Write a script that compares two numbers and displays the result.
+
+        function compareNumbers() {
+            var firstNumber = parseFloat(prompt("Enter the first number:"));
+            
+            var secondNumber = parseFloat(prompt("Enter the second number:"));
+            
+            var result;
+            
+            if (firstNumber > secondNumber) {
+                result = "The first number is greater than the second number.";
+            } else if (firstNumber < secondNumber) {
+                result = "The first number is less than the second number.";
+            } else {
+                result = "The first number is equal to the second number.";
+            }
+            
+            
+            alert(result);
+        }
+
+        compareNumbers();
+    </script>
+</body>
+</html>

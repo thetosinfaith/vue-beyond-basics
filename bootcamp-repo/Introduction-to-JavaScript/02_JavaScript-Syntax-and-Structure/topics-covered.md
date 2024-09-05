@@ -1,3 +1,6 @@
+Objective: Learn the foundational syntax and structure of JavaScript.
+
+
 Topics Covered:
 
 - JavaScript syntax basics (statements, semicolons, comments).

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+
+    // Task : Create a simple calculator using prompts and alerts.
+
+    <script>
+        function calculate() {
+
+            var operation = prompt("Choose an operation: +, -, *, /");
+            
+            var firstNumber = parseFloat(prompt('Enter the first number:'));
+            var secondNumber = parseFloat(prompt('Enter the second number:'));
+
+            var result;
+
+            switch(operation) {
+                case '+': 
+                    result = firstNumber + secondNumber;
+                    break;
+
+                case '-':
+                    result = firstNumber - secondNumber;
+                    break;
+                    
+                case '*':
+                    result = firstNumber * secondNumber;
+                    break;
+
+                case '/':
+                    if (secondNumber !== 0) {
+                        result = firstNumber / secondNumber;
+                    } else {
+                        alert("Error: Division by zero is not allowed.");
+                        return;
+                    }
+                    break;
+
+                default:
+                    alert("Invalid operation. Please choose +, -, *, or /.");
+                    return;
+            }
+
+            alert("The result of " + firstNumber + " " + operation + " " + secondNumber + " is " + result);
+        }
+
+        calculate();
+    </script>
+</body>
+</html>
